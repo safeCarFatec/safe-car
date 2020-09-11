@@ -9,6 +9,9 @@ class Veiculo extends Model
 {
     use HasFactory;
 
+    protected $primaryKey = 'vei_placa';
+    public $incrementing = false;
+
     protected $fillable = [
         'vei_placa',
         'vei_cli_cpf', 

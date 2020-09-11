@@ -9,6 +9,8 @@ class OrdemServico extends Model
 {
     use HasFactory;
 
+    protected $primaryKey = 'ord_ser_id';
+
     protected $fillable = [
         'ord_ser_id', 
         'ord_ser_CliCpf', 

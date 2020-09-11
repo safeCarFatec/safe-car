@@ -9,6 +9,8 @@ class ExecucaoServico extends Model
 {
     use HasFactory;
 
+    protected $primaryKey = 'exe_ser_id';
+
     protected $fillable = [
         'exe_ser_id', 
         'exe_ser_OrdSerId', 

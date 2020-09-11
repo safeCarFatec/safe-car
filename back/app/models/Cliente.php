@@ -9,6 +9,9 @@ class Cliente extends Model
 {
     use HasFactory;
 
+    protected $primaryKey = 'cli_cpf';
+    public $incrementing = false;
+
     protected $fillable = [
         'cli_cpf', 
         'cli_nome', 

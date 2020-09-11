@@ -22,8 +22,8 @@ class CreateExecucaoServicosTable extends Migration
             $table->smallInteger('exe_ser_pagamento');
             $table->timestamps();
             
-            $table->foreign('exe_ser_OrdSerId')->references('ord_ser_id')->on('ordem_servicos');
-            $table->foreign('exe_ser_CliCpf')->references('cli_cpf')->on('clientes');
+         //   $table->foreign('exe_ser_OrdSerId')->references('ord_ser_id')->on('ordem_servicos');
+        //    $table->foreign('exe_ser_CliCpf')->references('cli_cpf')->on('clientes');
         });
     }
 
