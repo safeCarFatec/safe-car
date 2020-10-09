@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'>
+	<link rel="stylesheet" href="cadastro.css">
+
+    <title>Cadastro</title>
+  </head>
+  <body>
+  <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+       <a class="navbar-brand" href="#">
+    <img src="https://www.imagemhost.com.br/images/2020/09/20/logo_safeCar.jpg" width="100" height="50" class="d-inline-block" alt="">
+    SAFE CAR
+		</a>
+      </nav>
+    </header>
+   
+        <div class="">
+            
+            <div class="content p-1">
+                <div class="list-group-item">
+                    <div class="d-flex">
+                        <div class="mr-auto p-2">
+                            <h2 class="display-5 titulo">Cadastro usuario</h2>
+                        </div>
+                    </div>	
+					<hr>
+                    <form method="POST" action="" enctype="multipart/form-data">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label><span class="text-danger">*</span> Nome</label>
+                                <input name="cli_nome" type="text" class="form-control" id="nome" placeholder="Nome completo" value="" autocomplete="off" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label><span class="text-danger">*</span> E-mail</label>
+                                <input name="cli_email" type="email" class="form-control" id="email" placeholder="E-mail" value="" autocomplete="off" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label><span class="text-danger">*</span> Senha</label>
+                                <input name="cli_senha" type="password" class="form-control" id="pin" placeholder="" maxlength="" value="" autocomplete="off" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label><span class="text-danger">*</span> Confirme a Senha</label>
+                                <input name="cli_senha" type="password" class="form-control" id="cli_senha" placeholder="" maxlength="" value="" autocomplete="off" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label><span class="text-danger">*</span> Endereço</label>
+                                <input name="cli_logradouro" type="text" class="form-control" id="endereco" placeholder="Rua João..." required>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label><span class="text-danger">*</span> Número</label>
+                                <input name="cli_numero" type="text" class="form-control" id="numero" placeholder="123" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label><span class="text-danger">*</span> Bairro</label>
+                                <input name="cli_bairro" type="text" class="form-control" id="complemento" placeholder="" required>
+                            </div>
+                        </div>
+						<div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label>Estado</label>
+                                <select name="cli_uf" id="estado" class="form-control">
+                                    <option selected>Selecione</option>
+                                      <option value="AC">Acre</option>
+										<option value="AL">Alagoas</option>
+										<option value="AP">Amapá</option>
+										<option value="AM">Amazonas</option>
+										<option value="BA">Bahia</option>
+										<option value="CE">Ceará</option>
+										<option value="DF">Distrito Federal</option>
+										<option value="ES">Espírito Santo</option>
+										<option value="GO">Goiás</option>
+										<option value="MA">Maranhão</option>
+										<option value="MT">Mato Grosso</option>
+										<option value="MS">Mato Grosso do Sul</option>
+										<option value="MG">Minas Gerais</option>
+										<option value="PA">Pará</option>
+										<option value="PB">Paraíba</option>
+										<option value="PR">Paraná</option>
+										<option value="PE">Pernambuco</option>
+										<option value="PI">Piauí</option>
+										<option value="RJ">Rio de Janeiro</option>
+										<option value="RN">Rio Grande do Norte</option>
+										<option value="RS">Rio Grande do Sul</option>
+										<option value="RO">Rondônia</option>
+										<option value="RR">Roraima</option>
+										<option value="SC">Santa Catarina</option>
+										<option value="SP">São Paulo</option>
+										<option value="SE">Sergipe</option>
+										<option value="TO">Tocantins</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label><span class="text-danger">*</span> Cidade</label>
+                                 <input name="cli_cidade" type="text" class="form-control" id="cidade" placeholder="" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label><span class="text-danger">*</span> CEP</label>
+                                <input name="cli_cep" type="text" class="form-control" id="cep" placeholder="12345-678" required>
+                            </div>
+                        </div>
+						 <div class="form-row">    
+							<div class="form-group col-md-3">
+                                <label><span class="text-danger">*</span> CPF</label>
+                                <input name="cpf" type="text" class="form-control" id="cpf" placeholder="XXX.XXX.XXX.XX" required>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label><span class="text-danger">*</span> Telefone</label>
+                                <input name="cli_telefone" type="text" pattern="^\d{2}-\d{4}-\d{4}$"class="form-control" id="cli_telefone" placeholder="XX-XXXX-XXXX" required>
+                            </div>
+							<div class="form-group col-md-3">
+                                <label><span class="text-danger">*</span> Celular</label>
+                                <input name="cli_celular" type="text" pattern="^\d{2}-\d{5}-\d{4}$"class="form-control" id="cli_celular" placeholder="XX-XXXXX-XXXX" required>
+                            </div>
+                          
+                        </div>     
+                        <p>
+                            <span class="text-danger">* </span>Campo obrigatório
+                        </p>
+                        <button type="submit" class="btn btn-outline-success">Cadastrar</button>
+						 <button type="submit" class="btn btn-outline-dark">Cancelar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+		<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="safe-car.online"> Safe-car.online</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
